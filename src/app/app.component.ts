@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  defaultLink = 'recipe';
   title = 'ChefOnline';
+
+  onNavigate(link: string) {
+    this.defaultLink = link;
+  }
 }
