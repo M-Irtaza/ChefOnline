@@ -7,9 +7,4 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent {
   dropdown: boolean = false;
-    @Output() linkSelect = new EventEmitter<string>();
-     onSelect(link: string) {
-        this.linkSelect.emit(link)
-     }
 }
- 
